@@ -2,29 +2,43 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Каталог. "Byte store" интернет магазин.</title>
+    <title>Каталог. "64BIT STORE" интернет магазин.</title>
     <link rel="stylesheet" href="../style.css">
 </head>
 <header>
     <h1>iPhone 8</h1>
-    <ul class="menu">
-        <li class="menu_link"><a href="../index.html">Главная</a></li>
-        <li class="menu_link"><a href="../catalog.html">Каталог</a></li>
-        <li class="menu_link"><a href="../contacts.html">Контакты</a></li>
-    </ul>
+    <table class="menu">
+        <tr>
+            <td class="menu_logo" rowspan="999">
+                <a href="../index.html"><img src="../img/64bit_logo.svg" alt="logo64bit" title="logo64bit" width=60 height=auto></a>
+            </td>
+        </tr>
+        <tr>
+            <td><a class="menu_link" href="../index.html">Главная</a>
+            </td>
+        </tr>
+        <tr>
+            <td><a class="menu_link" href="../catalog.html">Каталог</a>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class="menu_link" href="../contacts.html">Контакты</a>
+            </td>
+        </tr>
+    </table>
     <hr>
 </header>
 <body>
-<h3 class="header">Описание товара</h3>
+<h2 class="header">Описание товара</h2>
 <a href="../img/iphone8.jpeg" target="_blank">
-    <img class="img_phone royalblue"
+    <img class="img_phone"
          src="../img/iphone8.jpeg"
          alt="phone8"
          title="phone8"
-         height="300"
     >
 </a>
-<p>
+<p class="short_description">
     &nbsp;Модель iPhone 2017 года.
     Устройство получило новый корпус из металла и стекла, а также высокопроизводительный процессор A11 Bionic.
     Благодаря
@@ -32,8 +46,41 @@
     Камера – сдвоенная, с оптической стабилизацией на каждом модуле, теперь может снимать 240 кадров/с с разрешением
     1920х1080. Bluetooth версии 5.0 с возможностью подключать два устройства одновременно.
 </p>
-<h3 id="heading_props">Характеристики товара</h3>
-<p>
+<table class="table_colors">
+    <tbody>
+    <tr>
+        <td colspan="5">Доступные цвета</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+</table>
+<h3 class="header">Характеристики товара</h3>
 <table class="table_props">
     <thead>
         <tr>
@@ -247,7 +294,8 @@
 </body>
 <footer>
     <hr>
-    Все права защищены &copy;&nbsp;2020
+    <span>Все права защищены &copy;&nbsp;2020
     <a href="https://geekbrains.ru/study_groups/11428/videos/66710" target="_blank">Учебный портал</a>
+    </span>
 </footer>
 </html>

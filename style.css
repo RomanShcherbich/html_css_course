@@ -1,31 +1,97 @@
-h1,
-h3,
-p {
-    text-align: left;
+.header {
+    font-family: "Bahnschrift", serif;
+    width: max-content;
+    color: black;
+    font-weight: 800;
 }
 
-.royalblue {
-    color: royalblue;
-    border: royalblue 4px solid;
+.header_catalog {
+    color: black;
+    font-family: "Bahnschrift", serif;
+    font-size: 25px;
+    font-weight: 600;
 }
 
-.menu li{
-    list-style: none;
-    height: 25px;
+h1 {
+    color: #007070;
+}
+
+.input_text {
+    width: 250px;
+    height: 20px;
+    color: #484343;
+    font-weight: 500;
+}
+
+.input_textarea:first-letter{
+    text-transform:capitalize;
+}
+
+.input_textarea {
+    width: 330px;
+    height: 100px;
+    color: #484343;
+    font-weight: 500;
+    line-height: 20px;
+}
+
+input[type="text"],
+.input_textarea {
+    font-family: "Bahnschrift", serif;
+    text-transform: capitalize;
+}
+
+input {
+    font-family: "Bahnschrift", serif;
+    font-weight: 600;
+}
+
+input:hover {
+    color: #007070;
+}
+
+textarea {
+    font-family: "Bahnschrift", serif;
+    font-weight: 600;
+}
+
+textarea:hover {
+    color: #007070;
+}
+
+h1,h2,h3,h4,h5,h6,li,td {
+    font-family: "Bahnschrift", serif;
+    width: max-content;
+    padding: 3px;
+    background-color: rgba(237, 237, 237, 0.7);
+}
+
+p,span,a,b,th {
+    font-family: "Bahnschrift", serif;
+    width: auto;
+    padding: 3px;
+    background-color: rgba(237, 237, 237, 0.6);
+}
+
+
+.menu_logo {
+    width: 80px;
+    background-color: rgba(237, 237, 237, 0.1);
+}
+
+a,a:visited{
+    color: #000;
+}
+
+a:hover{
+    color: #007070;
 }
 
 .menu_link {
-    text-decoration-color: royalblue;
-    font-family: "Times New Roman", serif, Verdana;
+    text-decoration: none;
+    font-family: "Bahnschrift", serif;
     font-weight: bolder;
-    font-size: 20px;
-}
-
-.header {
-    color: black;
-    font-size: 18px;
-    font-weight: 400;
-    background-color: #eaeaea;
+    font-size: 25px;
 }
 
 .short_description {
@@ -34,6 +100,13 @@ p {
     font-style: italic;
     font-weight: 400;
     line-height: 16px;
+}
+
+.short_description:first-letter, .long_description:first-letter {
+    color: #007070;
+    font-family: "Bahnschrift", serif;
+    font-weight: bolder;
+    font-size: 18px;
 }
 
 .long_description {
@@ -68,11 +141,6 @@ p {
     text-align: left;
 }
 
-.table_props th {
-    color: #484343;
-    line-height: 30px;
-}
-
 .list_table > ul > li {
     list-style: none;
     width: 800px;
@@ -80,26 +148,97 @@ p {
     text-align: left;
 }
 
-.input_text {
-    width: 250px;
-    height: 20px;
-    color: #484343;
-    font-weight: 500;
+.img_catalog img {
+    padding: 25px;
+    width: 150px;
+    height: 200px;
 }
 
-.input_textarea {
-    width: 330px;
-    height: 100px;
-    color: #484343;
-    font-weight: 500;
-    line-height: 20px;
+.table_catalog {
+    border-spacing: 3px 3px;
+}
+
+.table_colors {
+    color: rgba(0, 0, 0, 0.8);
+    border: 2px solid rgba(70, 70, 70, 0.5);
+    border-radius: 5px;
+}
+
+.table_colors td {
+    border: 1px solid rgba(70, 70, 70, 0.7);
+    border-radius: 2px;
+    padding: 10px;
+}
+
+
+.table_colors tr{
+    border: 5px solid rgba(70, 70, 70, 0.7);
+}
+
+.table_colors tr:nth-child(1) {
+    height: 90px;
+}
+
+
+.table_colors tr:nth-child(2) td:nth-child(1){
+    background: goldenrod;
+}
+
+.table_colors tr:nth-child(2) td:nth-child(2){
+    background: #007070;
+}
+
+.table_colors tr:nth-child(2) td:nth-child(3){
+    background: royalblue;
+}
+
+.img_catalog {
+    background: #fafafa;
+    padding: 5px;
+    box-shadow: 3px 3px 6px 4px #888;
+    text-align: center;
+}
+
+.img_catalog > a{
+    text-decoration: none;
+    background: #fafafa;
+}
+
+.img_catalog img:hover{
+    padding: 10px;
+    width: 180px;
+    height: 230px;
+}
+
+.img_catalog a {
+    list-style: none;
 }
 
 .img_phone {
-    border: 25px solid #fafafa;
-    -webkit-box-shadow: 3px 3px 6px 4px #888;
-    -moz-box-shadow: 3px 3px 6px 4px #888;
+    background: #fafafa;
+    padding: 25px;
     box-shadow: 3px 3px 6px 4px #888;
+    width: 250px;
+    height: 300px;
+}
+
+.img_phone:hover{
+    padding: 25px;
+    box-shadow: 1px 1px #888;
+    width: 250px;
+    height: 300px;
+}
+
+/*.img_phone:hover{
+    padding: 10px;
+    width: 280px;
+    height: 330px;
+    box-shadow: 3px 3px 6px 4px #888;
+}*/
+
+.table_props th {
+    color: #484343;
+    line-height: 30px;
 }
 
 .table_props td {
@@ -112,21 +251,7 @@ p {
     text-align: left;
 }
 
-.table_catalog {
-    text-decoration-color: royalblue;
-    font-family: "Times New Roman", serif, Verdana;
-    font-weight: bolder;
-    font-size: 20px;
-    text-align: center;
-}
-
-.header_catalog {
-    color: black;
-    font-family: "Times New Roman", serif, Verdana;
-    font-size: 25px;
-    font-weight: 600;
-}
-
 html {
-    background-color: #f8f8f8;
+    background: url("img/background_main.jpg") no-repeat;
+    background-size: cover;
 }
