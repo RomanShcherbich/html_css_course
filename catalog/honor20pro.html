@@ -2,26 +2,56 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Каталог. "Byte store" интернет магазин.</title>
+    <title>Каталог. "64BIT STORE" интернет магазин.</title>
     <link rel="stylesheet" href="../style.css">
 </head>
-<header>
-    <h1>HONOR 20 Pro</h1>
-    <ul class="menu">
-        <li class="menu_link"><a href="../index.html">Главная</a></li>
-        <li class="menu_link"><a href="../catalog.html">Каталог</a></li>
-        <li class="menu_link"><a href="../contacts.html">Контакты</a></li>
-    </ul>
-    <hr>
+<header class="container">
+    <div class="menu menu_logo">
+        <a href="../index.html"><img src="../img/64bit_logo.svg" alt="logo64bit" title="logo64bit"></a>
+    </div>
+    <div class="menu">
+        <div>
+            <a class="menu_link" href="../index.html">Главная</a>
+        </div>
+        <div>
+            <a class="menu_link menu_current_page" href="../catalog.html">Каталог</a>
+        </div>
+        <div>
+            <a class="menu_link" href="../contacts.html">Контакты</a>
+        </div>
+    </div>
 </header>
 <body>
-<h3 class="header header_short">Описание товара</h3>
-<a href="../img/honor20pro.jpeg" target="_blank">
-    <img class="img_phone" src="../img/honor20pro.jpeg"
-         alt="honor20pro"
-         title="honor20pro"
-         width="170" height="221">
-</a>
+<h3 class="header header_short">HONOR 20 Pro: Описание товара</h3>
+<div class="container_good">
+    <div class="photo_cell block_line">
+        <a href="../img/honor20pro.jpeg" target="_blank">
+            <img class="img_phone" src="../img/honor20pro.jpeg"
+                 alt="honor20pro"
+                 title="honor20pro"
+                 width="170" height="221"
+            >
+        </a>
+    </div>
+    <div class="block_line">
+        <table class="table_colors">
+            <tbody>
+            <tr>
+                <td colspan="5">Доступные цвета</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+    </div>
+    <div class="block_line">
+        <input class="c-button" type="submit" value="Купить">
+    </div>
+</div>
 <p class="short_description">
     &nbsp;У производителя появилась идея комбинировать все наиболее инновационные решения в едином устройстве. Данная
     информация справедлива и для дизайна Honor 20 Pro. Android, экран 6.26" IPS (1080x2340), HiSilicon Kirin 980,
@@ -113,9 +143,7 @@
     компании-производителя.
 </p>
 </body>
-<footer>
-    <hr>
-    Все права защищены &copy; 2020
-    <a href="https://geekbrains.ru/study_groups/11428/videos/66710" target="_blank">Учебный портал</a>
+<footer class="footer">
+    <span>Все права защищены &copy;&nbsp;2020</span>
 </footer>
 </html>

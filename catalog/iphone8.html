@@ -2,38 +2,65 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Каталог. "Byte store" интернет магазин.</title>
+    <title>Каталог. "64BIT STORE" интернет магазин.</title>
     <link rel="stylesheet" href="../style.css">
 </head>
-<header>
-    <h1>iPhone 8</h1>
-    <ul class="menu">
-        <li class="menu_link"><a href="../index.html">Главная</a></li>
-        <li class="menu_link"><a href="../catalog.html">Каталог</a></li>
-        <li class="menu_link"><a href="../contacts.html">Контакты</a></li>
-    </ul>
-    <hr>
-</header>
+<header class="container">
+    <div class="menu menu_logo">
+        <a href="../index.html"><img src="../img/64bit_logo.svg" alt="logo64bit" title="logo64bit"></a>
+    </div>
+    <div class="menu">
+        <div>
+            <a class="menu_link" href="../index.html">Главная</a>
+        </div>
+        <div>
+            <a class="menu_link menu_current_page" href="../catalog.html">Каталог</a>
+        </div>
+        <div>
+            <a class="menu_link" href="../contacts.html">Контакты</a>
+        </div>
+    </div>
+    </header>
 <body>
-<h3 class="header">Описание товара</h3>
-<a href="../img/iphone8.jpeg" target="_blank">
-    <img class="img_phone royalblue"
-         src="../img/iphone8.jpeg"
-         alt="phone8"
-         title="phone8"
-         height="300"
-    >
-</a>
-<p>
+<h2 class="header">iPhone 8: Описание товара</h2>
+<div class="container_good">
+    <div class="photo_cell block_line">
+        <a href="../img/iphone8.jpeg" target="_blank">
+            <img class="img_phone"
+                 src="../img/iphone8.jpeg"
+                 alt="phone8"
+                 title="phone8"
+            >
+        </a>
+    </div>
+    <div class="block_line">
+        <table class="table_colors">
+            <tbody>
+            <tr>
+                <td colspan="5">Доступные цвета</td>
+            </tr>
+            <tr class="table_colors_hide">
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+    </div>
+    <div class="block_line">
+       <input class="c-button" type="submit" value="Купить">
+    </div>
+</div>
+<div class="short_description"><p>
     &nbsp;Модель iPhone 2017 года.
     Устройство получило новый корпус из металла и стекла, а также высокопроизводительный процессор A11 Bionic.
     Благодаря
     задней стеклянной панели iPhone 8 поддерживает беспроводную зарядку стандарта Qi и быструю зарядку.
     Камера – сдвоенная, с оптической стабилизацией на каждом модуле, теперь может снимать 240 кадров/с с разрешением
     1920х1080. Bluetooth версии 5.0 с возможностью подключать два устройства одновременно.
-</p>
-<h3 id="heading_props">Характеристики товара</h3>
-<p>
+</p></div>
+<h3 class="header">Характеристики товара</h3>
 <table class="table_props">
     <thead>
         <tr>
@@ -245,9 +272,7 @@
     них не так много, как ожидаешь. Мы протестировали iPhone 8 и решили, что переходить на него большого смысла нет.
 </p>
 </body>
-<footer>
-    <hr>
-    Все права защищены &copy;&nbsp;2020
-    <a href="https://geekbrains.ru/study_groups/11428/videos/66710" target="_blank">Учебный портал</a>
+<footer class="footer">
+    <span>Все права защищены &copy;&nbsp;2020</span>
 </footer>
 </html>

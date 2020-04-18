@@ -5,20 +5,27 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Каталог. "Byte store" интернет магазин.</title>
+    <title>Каталог. "64BIT STORE" интернет магазин.</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<header>
-    <h1>Каталог</h1>
-    <ul class="menu">
-        <li class="menu_link"><a href="index.html">Главная</a></li>
-        <li class="menu_link"><a href="catalog.html">Каталог</a></li>
-        <li class="menu_link"><a href="contacts.html">Контакты</a></li>
-    </ul>
-    <hr>
-</header>
+    <header class="container">
+        <div class="menu menu_logo">
+            <a href="index.html"><img src="img/64bit_logo.svg" alt="logo64bit" title="logo64bit"></a>
+        </div>
+        <div class="menu">
+            <div>
+                <a class="menu_link" href="index.html">Главная</a>
+            </div>
+            <div>
+                <a class="menu_link menu_current_page" href="catalog.html">Каталог</a>
+            </div>
+            <div>
+                <a class="menu_link" href="contacts.html">Контакты</a>
+            </div>
+        </div>
+    </header>
 <body>
-<table class="catalog">
+<table class="table_catalog">
     <thead>
     <tr>
         <th class="header_catalog" colspan="4">Телефоны</th>
@@ -26,32 +33,32 @@
     </thead>
     <tbody>
     <tr>
-        <td class="table_catalog">
+        <td class="img_catalog">
             <a href="catalog/iphone8.html">
-                <img class="img_phone"
+                <img
                      src="img/iphone8.jpeg"
                      alt="phone8"
                      title="phone8"
-                     width="150" height="195"
                 >
-                <br>iPhone 8
             </a>
         </td>
-        <td class="table_catalog">
+        <td class="img_catalog">
             <a href="catalog/honor20pro.html">
-                <img class="img_phone"
+                <img
                      src="img/honor20pro.jpeg"
                      alt="honor20pro"
                      title="honor20pro"
                      width="150" height="195">
-                <br>Huawei Honor 20 Pro</a>
+            </a>
         </td>
+    </tr>
+    <tr>
+        <td class="img_catalog"><a href="catalog/iphone8.html">iPhone 8</a></td>
+        <td class="img_catalog"><a href="catalog/honor20pro.html">Huawei Honor 20 Pro</a></td>
     </tr>
 </table>
 </body>
-<footer>
-    <hr>
-    Все права защищены &copy;&nbsp;2020
-    <a href="https://geekbrains.ru/study_groups/11428/videos/66710" target="_blank">Учебный портал</a>
+<footer class="footer">
+    <span>Все права защищены &copy;&nbsp;2020</span>
 </footer>
 </html>
