@@ -1,8 +1,76 @@
-.header {
+.c-button {
+    -webkit-writing-mode: horizontal-tb !important;
+    -webkit-appearance: button;
+    border-color: rgb(216, 216, 216) rgb(209, 209, 209) rgb(186, 186, 186);
+    border-style: solid;
+    border-width: 1px;
+    /*padding: 1px 7px 2px;*/
+    text-rendering: auto;
+    display: inline-block;
+    text-align: center;
+    font-size: medium;
+    background-color: snow;
+    width: 80px;
+    height: 35px;
+}
+
+.c-button:hover {
+    background: lightcyan;
+}
+
+.yandex_map {
+    width: 100%;
+    height: 374px;
+}
+
+.container {
     font-family: "Bahnschrift", serif;
-    width: max-content;
     color: black;
     font-weight: 800;
+    margin: 0 auto;
+    width: available;
+    padding: 4px;
+}
+
+.menu_logo {
+    display: inline-block;
+    width: 80px;
+    margin-top: 5px;
+    margin-left: 5px;
+    float: left;
+}
+
+.menu {
+    padding-right: 15px;
+    text-align: right;
+}
+
+.menu div{
+    display: inline-block;
+    margin-top: 25px;
+    margin-left: 20px;
+    margin-bottom: 25px;
+}
+
+
+a,a:visited:not(.menu_link){
+    color: #000;
+}
+
+a:hover{
+    color: #007070;
+}
+
+.menu_link {
+    text-decoration: none;
+    font-family: "Bahnschrift", serif;
+    font-weight: bolder;
+    font-size: 25px;
+}
+
+.menu_current_page {
+    color: #007070; !important;
+    font-size: 30px;
 }
 
 .header_catalog {
@@ -13,6 +81,10 @@
 }
 
 h1 {
+    color: #007070;
+}
+
+.h1 {
     color: #007070;
 }
 
@@ -73,25 +145,24 @@ p,span,a,b,th {
     background-color: rgba(237, 237, 237, 0.6);
 }
 
-
-.menu_logo {
-    width: 80px;
-    background-color: rgba(237, 237, 237, 0.1);
+.body_block {
+    display: inline-block;
 }
 
-a,a:visited{
-    color: #000;
+.body_block ul {
+    list-style: none;
 }
 
-a:hover{
-    color: #007070;
+.body_cross_menu_top_block li {
+    display: inline-block;
+    width: 50px;
+    height:50px;
 }
 
-.menu_link {
-    text-decoration: none;
-    font-family: "Bahnschrift", serif;
-    font-weight: bolder;
-    font-size: 25px;
+
+.body_block {
+    background-color: royalblue;
+    outline: 4px solid #007070;
 }
 
 .short_description {
@@ -158,10 +229,18 @@ a:hover{
     border-spacing: 3px 3px;
 }
 
+.c-button {
+    position: absolute;
+    top: 325px;
+    left: 340px;
+}
+
 .table_colors {
     color: rgba(0, 0, 0, 0.8);
     border: 2px solid rgba(70, 70, 70, 0.5);
     border-radius: 5px;
+    position: absolute;
+    top: 250px;
 }
 
 .table_colors td {
@@ -170,13 +249,8 @@ a:hover{
     padding: 10px;
 }
 
-
 .table_colors tr{
     border: 5px solid rgba(70, 70, 70, 0.7);
-}
-
-.table_colors tr:nth-child(1) {
-    height: 90px;
 }
 
 
@@ -201,6 +275,7 @@ a:hover{
 
 .img_catalog > a{
     text-decoration: none;
+    display: block;
     background: #fafafa;
 }
 
@@ -214,28 +289,44 @@ a:hover{
     list-style: none;
 }
 
+.container_good {
+    position: relative;
+}
+
+.block_line {
+    display: inline-block;
+    padding-right: 50px;
+}
+
+.photo_cell {
+    width: 290px;
+    height: 375px;
+    float: left;
+}
+
 .img_phone {
     background: #fafafa;
     padding: 25px;
     box-shadow: 3px 3px 6px 4px #888;
     width: 250px;
     height: 300px;
+    display: block;
 }
 
 .img_phone:hover{
-    padding: 25px;
-    box-shadow: 1px 1px #888;
-    width: 250px;
-    height: 300px;
-}
-
-/*.img_phone:hover{
     padding: 10px;
     width: 280px;
     height: 330px;
     box-shadow: 3px 3px 6px 4px #888;
-}*/
-
+}
+/*
+.img_phone:hover{
+    padding: 10px;
+    width: 280px;
+    height: 330px;
+    box-shadow: 3px 3px 6px 4px #888;
+}
+*/
 .table_props th {
     color: #484343;
     line-height: 30px;
@@ -249,6 +340,13 @@ a:hover{
     font-weight: 400;
     line-height: 20px;
     text-align: left;
+}
+
+.footer {
+    height: 50px;
+    text-align: right;
+    padding-right: 10px;
+    padding-top: 10px;
 }
 
 html {

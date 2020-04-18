@@ -8,30 +8,22 @@
     <title>Каталог. "64BIT STORE" интернет магазин.</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<header>
-    <h1>Каталог</h1>
-    <table class="menu">
-        <tr>
-            <td class="menu_logo" rowspan="999">
-                <a href="index.html"><img src="img/64bit_logo.svg" alt="logo64bit" title="logo64bit" width=60 height=auto></a>
-            </td>
-        </tr>
-        <tr>
-            <td><a class="menu_link" href="index.html">Главная</a>
-            </td>
-        </tr>
-        <tr>
-            <td><a class="menu_link" href="catalog.html">Каталог</a>
-            </td>
-        </tr>
-        <tr>
-            <td>
+    <header class="container">
+        <div class="menu menu_logo">
+            <a href="index.html"><img src="img/64bit_logo.svg" alt="logo64bit" title="logo64bit"></a>
+        </div>
+        <div class="menu">
+            <div>
+                <a class="menu_link" href="index.html">Главная</a>
+            </div>
+            <div>
+                <a class="menu_link menu_current_page" href="catalog.html">Каталог</a>
+            </div>
+            <div>
                 <a class="menu_link" href="contacts.html">Контакты</a>
-            </td>
-        </tr>
-    </table>
-    <hr>
-</header>
+            </div>
+        </div>
+    </header>
 <body>
 <table class="table_catalog">
     <thead>
@@ -66,10 +58,7 @@
     </tr>
 </table>
 </body>
-<footer>
-    <hr>
-    <span>Все права защищены &copy;&nbsp;2020
-    <a href="https://geekbrains.ru/study_groups/11428/videos/66710" target="_blank">Учебный портал</a>
-    </span>
+<footer class="footer">
+    <span>Все права защищены &copy;&nbsp;2020</span>
 </footer>
 </html>
