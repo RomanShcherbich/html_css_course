@@ -1,0 +1,204 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.padding-site {
+    padding-left: 640px;
+    padding-right: 200px;
+}
+
+.container {
+    width: 1920px;
+    margin: 0 auto;
+    background: url("img/background.png") no-repeat;
+}
+
+.slider {
+    position: relative;
+    height: 725px;
+}
+
+.header {
+    width: 1920px;
+    height: 83px;
+    background-color: #000000;
+    opacity: 0.5;
+    /* Style for "+123 456 7" */
+    color: #ffffff;
+    font-family: "Roboto Condensed";
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 22.36px;
+    /* Text style for "+123 456 7" */
+    letter-spacing: 0.36px;
+}
+
+.header > div {
+    float: left;
+    padding-left: 200px;
+    padding-top: 19px;
+}
+
+.logo-link {
+    text-decoration: none;
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+}
+
+.logo-link > .logo_text1 { /* Style for "Historical" */
+    width: 169px;
+    height: 29px;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 22.36px;
+    /* Text style for "Historical" */
+    letter-spacing: 0.77px;
+}
+
+.logo-link > .logo_text2 { /* Style for "GAMES" */
+    width: 221px;
+    height: 12px;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 22.36px;
+    text-transform: uppercase;
+    /* Text style for "GAMES" */
+    letter-spacing: 31.41px;
+}
+
+.phone-icon {
+    float: left;
+    padding-top: 6px;
+    padding-right: 10px;
+}
+
+.email-icon {
+    float: left;
+    padding-top: 10px;
+    padding-right: 10px;
+}
+
+.phone-number, .email-text {
+    padding-top: 10px;
+    display: inline-flex;
+}
+
+.search-table {
+    /* Style for "Прямоуголь" */
+    width: 208px;
+    height: 38px;
+    border-collapse: collapse;
+}
+
+.search-table td {
+    border: 1px solid #ffffff;
+    border-collapse: collapse;
+}
+
+.search-icon {
+    width: 50px;
+    padding-top: 5px;
+    padding-left: 13px;
+}
+
+.search-table input{
+    /* Style for "Прямоуголь" */
+    width: 158px;
+    height: 38px;
+    color: #ffffff;
+    font-family: "Roboto Condensed", serif;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 22.36px;
+    /* Text style for "+123 456 7" */
+    letter-spacing: 0.36px;
+}
+
+.social_links, .menu-list {
+    list-style-type: none;
+    float: left;
+}
+.menu {
+    padding: 25px 50px;
+}
+
+.menu-link {
+    /* Style for "Home" */
+    width: 511px;
+    height: 16px;
+    /*opacity: -1;*/
+    color: #000000;
+    font-family: "Roboto Condensed", serif;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 22.36px;
+    /*border-bottom: 1px solid #ffffff;*/
+    text-decoration: none;
+    padding: 5px 13px;
+}
+
+.menu-link-active a {
+    color: #ffffff;
+    letter-spacing: 0.36px;
+    border-bottom: 3px solid #ffffff;
+    /*border-bottom: 57px;*/
+}
+
+.menu-link:hover {
+    color: #ffffff;
+    letter-spacing: 0.36px;
+    border-bottom: 3px solid #ffffff;
+}
+
+.slider-content1 {
+    /* Style for "Nunc eget" */
+    color: #ffffff;
+    font-family: "Roboto Condensed", serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 48px;
+    border-bottom: 3px solid #ffffff;
+    width: 117px;
+    height: 35px;
+    padding: 5px 15px;
+    margin: 100px 240px;
+}
+
+.slider-content2 {
+    /*width: 576px;*/
+    height: 48px;
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 60px;
+    font-weight: 500;
+    line-height: 48px;
+    letter-spacing: 0.6px;
+}
+.social_links {
+    padding: 100px 220px;
+
+}
+
+.social_links li {
+    width: 40px;
+    height: 40px;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    float: left;
+    text-align: center;
+}
+
+.social_links img {
+    margin-top: 12px;
+}
