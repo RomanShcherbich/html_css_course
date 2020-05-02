@@ -3,51 +3,50 @@
     padding: 0;
 }
 
-body {
-    font-family: 'Roboto Condensed', sans-serif;
+html, body {
+    height: 100%;
+    font-family: 'Roboto Condensed', serif;
 }
 
 .clearfix:after {
-    content: "";
-    display: table;
+    /*content: "";*/
+    /*display: table;*/
     clear: both;
 }
 
 .padding-site {
-    padding-left: 640px;
-    padding-right: 200px;
+    padding-left: 30%;
+    padding-right: 20%;
 }
 
 .container {
-    width: 1920px;
+    max-width: 1920px;
+    min-width: 375px;
     margin: 0 auto;
-    background: url("img/background.png") no-repeat;
+    background: url("img/background.png") top center no-repeat;
+    min-height: 100%;
 }
 
 .slider {
     position: relative;
-    height: 725px;
+    height: 643px;
 }
 
 .header {
-    width: 1920px;
-    height: 83px;
-    background-color: #000000;
-    opacity: 0.5;
-    /* Style for "+123 456 7" */
+    width: auto;
+    min-height: 83px;
+    background-color: rgba(0, 0, 0, 0.5);
     color: #ffffff;
-    font-family: "Roboto Condensed";
     font-size: 17px;
     font-weight: 400;
     line-height: 22.36px;
-    /* Text style for "+123 456 7" */
     letter-spacing: 0.36px;
 }
 
 .header > div {
     float: left;
-    padding-left: 200px;
-    padding-top: 19px;
+    padding-left: 10%;
+    padding-top: 18px;
 }
 
 .logo-link {
@@ -61,13 +60,14 @@ body {
     height: 29px;
     font-size: 36px;
     font-weight: 500;
+    font-family: 'Poppins', sans-serif;
     line-height: 22.36px;
     /* Text style for "Historical" */
     letter-spacing: 0.77px;
 }
 
 .logo-link > .logo_text2 { /* Style for "GAMES" */
-    width: 221px;
+    /*width: 221px;*/
     height: 12px;
     font-size: 15px;
     font-weight: 500;
@@ -91,7 +91,7 @@ body {
 
 .phone-number, .email-text {
     padding-top: 10px;
-    display: inline-flex;
+    display: flex;
 }
 
 .search-table {
@@ -114,14 +114,13 @@ body {
 
 .search-table input{
     /* Style for "Прямоуголь" */
-    width: 158px;
+    max-width: 158px;
     height: 38px;
     color: #ffffff;
     font-family: "Roboto Condensed", serif;
     font-size: 17px;
     font-weight: 400;
     line-height: 22.36px;
-    /* Text style for "+123 456 7" */
     letter-spacing: 0.36px;
 }
 
@@ -129,8 +128,10 @@ body {
     list-style-type: none;
     float: left;
 }
+
 .menu {
     padding: 25px 50px;
+    text-align: center;
 }
 
 .menu-link {
@@ -162,7 +163,7 @@ body {
 }
 
 .slider-content1 {
-    /* Style for "Nunc eget" */
+    text-align: center;
     color: #ffffff;
     font-family: "Roboto Condensed", serif;
     font-size: 18px;
@@ -171,12 +172,12 @@ body {
     border-bottom: 3px solid #ffffff;
     width: 117px;
     height: 35px;
-    padding: 5px 15px;
-    margin: 100px 240px;
+    padding: 5px 5px;
+    margin: 100px 35%;
 }
 
 .slider-content2 {
-    /*width: 576px;*/
+    text-align: center;
     height: 48px;
     color: #ffffff;
     font-family: 'Poppins', sans-serif;
@@ -185,9 +186,9 @@ body {
     line-height: 48px;
     letter-spacing: 0.6px;
 }
-.social_links {
-    padding: 100px 220px;
 
+.social_links {
+    padding: 100px 30%;
 }
 
 .social_links li {
@@ -201,4 +202,173 @@ body {
 
 .social_links img {
     margin-top: 12px;
+}
+
+.about-us {
+    padding: 81px 11%;
+    max-width: 1000px;
+    min-width: 200px;
+    height: 300px;
+    background: white;
+    align-content: center;
+}
+
+.content-about-us {
+    width: 400px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    margin-right: 5%;
+}
+
+.about-us > div {
+    float: left;
+    marging-right: 10%;
+    marging-bottom: 10%;
+}
+
+.content-about-us-header {
+    padding-bottom: 35px;
+    color: #f44336;
+    font-family: Poppins, serif;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 36px;
+}
+
+.content-about-us-par {
+    color: #999999;
+    font-family: "Roboto Condensed", serif;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 24px;
+    letter-spacing: 0.12px;
+}
+
+/*.image-about-us {*/
+/*    width: 540px;*/
+/*    height: 338px;*/
+/*}*/
+
+.footer {
+    width: auto;
+    height: 71px;
+    background-color: #000000;
+}
+
+.content-footer {
+    text-align: center;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0.16px;
+    padding: 25px;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 1500px) {
+    .header > div {
+        padding-left: 5%;
+    }
+
+    .menu {
+        padding: 25px 2%;
+    }
+
+    .menu-link {
+        padding: 5px 10px;
+    }
+
+    .about-us {
+        padding: 81px 8%;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .padding-site {
+        padding-left: 20%;
+    }
+
+    .header > div {
+        padding-left: 3%;
+    }
+
+    .menu {
+        padding: 25px 1.5%;
+    }
+
+    .menu-link {
+        padding: 5px 8px;
+    }
+
+    .about-us {
+        height: 600px;
+        padding: 81px 25%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+
+    .padding-site {
+    }
+
+    .container {
+        background: url("img/background.png") bottom center;
+    }
+
+    .header {
+        height: 240px;
+        margin: 0 auto;
+    }
+
+    .header > div {
+        float: none;
+        padding-left: 25%;
+    }
+
+    .phone-number, .email-text {
+        margin: 0 auto;
+        display: compact;
+    }
+
+    .menu {
+        padding: 15px;
+        margin: 0 auto;
+    }
+
+    .menu-list {
+        float: none;
+        padding-top: 15px;
+    }
+
+    .slider-content1 {
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+
+    .slider-content2 {
+        font-size: 30px;
+    }
+
+    .about-us {
+        height: 600px;
+        padding: 60px 12% 60px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    .header > div {
+        padding-left: 15%;
+    }
+
+    .image-about-us > img {
+        width: 405px;
+        height: 254px;
+    }
+
+    .about-us {
+        height: 600px;
+        padding: 40px 10% 30px;
+    }
 }
